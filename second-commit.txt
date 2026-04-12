@@ -1,1 +1,1 @@
-our sec0nd step in git !
+our second step in git !
