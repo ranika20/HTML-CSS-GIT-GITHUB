@@ -1,16 +1,210 @@
+@import url('https://fonts.googleapis.com/css2?family=Federant&family=Playwrite+NO:wght@100..400&family=Special+Elite&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 
 body{
 background-color:#44FCD3;    
-font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+font-family:"Federant", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(128, 0, 255);
 }
 
-heder {
+ header {
 
  text-align: center;
 
 }
 
-section{
+header h1 {
+    padding: 20px;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+header p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+}
+
+.first-section {
+    height: 100vh;
     text-align: center;
 }
+.first-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+.first-section p {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+.first-section a {
+    color: rgb(0, 255, 85);
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+
+.buttons-wrapper .dark-blue-btn {
+    flex: auto;
+    background-color: #e7e7e7; color: black ;
+    color: #04AA6D;
+    border: none;
+    padding: 10px 30px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+
+
+.buttons-wrapper .yellow-btn {
+    flex: auto;
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    border-radius: 5px
+}
+.buttons-wrapper .dark-blue-btn:hover   {
+    background-color: hsla(156, 65%, 51%, 0.564);
+    color: rgba(255, 255, 255, 0.481);
+}
+
+.buttons-wrapper .yellow-btn:hover {
+    background-color: #5555557d;
+    color: white;
+}
+.first-section img {
+    width:100px;
+    height: 100px;
+    margin-top: 20px;
+    border-radius: 5px;
+    border: #04AA6D solid 2px;
+}
+
+.git-explanation p{
+    display: flex;
+    text-align: center;
+    color: black;
+    background-color: blue;
+   width: 250px;
+}
+.git-explanation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.second-section {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    background-color: hsla(249, 51%, 34%, 0.329);
+    color: white;
+    padding: 50px 20px;
+    text-align: center;
+}
+.p{
+    align-items: center;
+    color: red;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.second-section-img {
+    display: block;
+    width: 300px;
+    height: 400px;
+    margin-top: 20vh; /* שנה את המספר לפי המרחק שאתה רוצה */
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: #04AA6D solid 2px;
+    object-fit: cover;
+}
+
+.third-section {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    text-align: center;
+}
+    .grid-container{
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(250px, 1fr) );
+        column-gap: 20px;
+        row-gap: 20px;
+        gap: 20px;
+        margin-top: 40px;
+    }
+    .grid-item{
+        .grid-item {
+    background-color: blue;
+    color: white;
+    font-size: 20px; /* הקטנתי מעט כי 40px זה ענק לפסקה */
+    display: flex;
+    
+    /* השינוי החשוב ביותר: הופך את הסדר לטור */
+    flex-direction: column; 
+    
+    /* ממרכז את התוכן */
+    justify-content: center;
+    align-items: center;
+    
+    /* עדיף להשתמש ב-min-height במקום height קבוע כדי שהטקסט לא יגלוש החוצה */
+    min-height: 300px; 
+    
+    padding: 20px;
+    border-radius: 10px;
+    border: #04AA6D solid 2px;
+}
+
+.grid-item img {
+    width: 100%;       /* 100% מהרוחב של הריבוע */
+    max-width: 250px;  /* הגבלת גודל מקסימלי */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 15px; /* רווח בין התמונה לפסקה שמתחתיה */
+}
+    
+    }
+    .grid-item img {
+    width: 150%;            /* שהתמונה לא תצא מהגבולות */
+    max-width: 300px;       /* הגבלת גודל לתמונה */
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 10px;    /* רווח קבוע בין התמונה לפסקה */
+}
+    .red{
+        background-color: red;
+    }
+    .blue{
+        background-color: blue;
+    }
+    .yellow{
+        background-color: yellow;
+    }
+    .crimson{
+        background-color: crimson;
+    }
+    .green{
+        background-color: green;
+    }
+    .gray{
+        background-color: gray;
+    }
+    .skyblue{
+        background-color: skyblue;
+    }
+    .orange{
+        background-color: orange;
+    }
+
+
