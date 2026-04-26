@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Federant&family=Marmelad&family=Playwrite+NO:wght@100..400&family=Special+Elite&display=swap");
+
+:root {
+  --praimery-color: #0460d9;
+  --praimery-hover: #f4246d;
+  --bg-color: #d9d9d9;
+  --bg-light-color: #d9d9d9b1;
+  --text-main: #244004;
+  --border-color: #f0ecec;
+  --gray-color: #969fa6;
+  --secondary-color: #f0f0f0;
+  --status-active-text: #864caf;
+  --status-inactive-text: #36f475;
+  --status-pending-text: #ff9800;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.body {
+  font-family: "Federant", serif;
+  font-weight: 400;
+  font-style: normal;
+  background-color: var(--bg-color);
+  color: var(--text-main);
+  padding: 20px;
+}
+.dashboard-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: var(--secondary-color);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.btn-primary {
+  background-color: var(--praimery-color);
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.btn-primary:hover {
+  background-color: var(--praimery-hover);
+}
+.table-wrapper {
+  background-color: var(--bg-light-color);
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0 5px 15px black;
+  overflow-y: auto;
+  max-height: 500px;
+}
+
+.users-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+}
+.users-table thead {
+  
+  background-color: var(--text-main);
+  color: var(--bg-light-color);
+}
+
+.users-table th {
+  padding: 12px 15px;
+  text-align: left; /* זה מה שיצמיד את הטקסט למקום הנכון */
+  border-bottom: 2px solid var(--gray-color);
+}
+.users-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid;
+  gap: 50px;
+}
+.users-table tbody tr:hover {
+  background-color: var(--bg-light-color);
+}
+.users-table .checkbox-col {
+  width: 40px;
+}
+.users-table .status-active {
+  color: var(--status-active-text);
+  font-weight: bold;
+}
+.users-table .status-inactive {
+  color: var(--status-inactive-text);
+  font-weight: bold;
+}
+.user-cell {
+ display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 15px;
+  width: auto; /* תוריד את ה-400px שהיה שם */
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+}
+.badge {
+   padding: 3px 7px; 
+   border-radius: 15px;
+}
+
+.badge-active {
+    background-color: var(--status-active-text);
+    color: var(--border-color);
+}
+
+.badge-pending {
+    background-color: var(--status-pending-text);
+    color: var(--border-color);
+}
+
+.badge-inactive {
+    background-color: var(--status-inactive-text);
+    color: var(--border-color);
+}
+.user-cell img {
+  width: 45px;      /* גובה ורוחב קבועים לתמונה */
+  height: 45px;
+  object-fit: cover;
+  border-radius: 5px; /* עיגול עדין לפי התמונה ששלחת */
+  flex-shrink: 0;   /* מונע מהתמונה להימעך */
+}

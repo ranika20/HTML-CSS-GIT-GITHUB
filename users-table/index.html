@@ -1,0 +1,330 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Users Table</title>
+    <link rel="stylesheet" href="stayle.css" />
+    <link
+      rel="shortcut icon"
+      href="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlwMBIgACEQEDEQH/xAAcAAABBQEBAQAAAAAAAAAAAAAAAQQFBgcDAgj/xABDEAABAgMEBwYDBQYEBwAAAAABAgMABBEFEiExBhMiMkFCUQcjM2FxoRSBkUNSscHRJGJjcuHwFYKS8RYlNERTwtL/xAAZAQEAAwEBAAAAAAAAAAAAAAAAAQIDBQT/xAAiEQEBAAICAgICAwAAAAAAAAAAAQIRAxIEQSExUWEFEzL/2gAMAwEAAhEDEQA/ANnHHUZ80BpXut3nhRWvcZ839mEFPshsc9YBcOXwaYwmGFPBgwzRgzzCDgT9j0EAHKivA4GF4UX4VNmEwzPgcP7zgPVzFrlpAGFBrfD5Y4z05LSEo5NWo8hiWaFS4s0AEV7TbSdVhssykqlt20JoHUIcOy0gZuLpiQMBTiemMZNpDNPzMxLv2lPTNoOoWF1fX3YP7rY2U/SKZZzFtx8Nz+WjTHaIJmhsOxZm0Ucsw+4JZojqCoXj/pjidMNKVK1irFso0ySJ5dfrcpFPZtUraS4lRun28o6i1P3veMv7MnonDhPS3I7RnpU3rf0dnJQA/wDUSzqZhseZpQj6RarC0isnSBgvWTPNTDgzSKpWj+ZJxHzEZBMz04pV+VnLv8NSRT60iAmX3Gp1ucYCpGebNUPsG7Q9R5dRkYmct9q3gxv0+keP8f8AL/aAcLvi8YqvZ3pSrSiyFmYKE2tKq1cyE4A13VgcAQPqDFqxrseNzGNpdvJlLjdUDM6rxOeFx+x3ueExr3VNZzdIMcdTvc8SgDCmoy5oBQeDuc0A/gZc1YPNnc5oBcfsN3j6wkAvfYYI416wQANuoZwI3jBVKsW8EjeFM4ANZg3s3d7zhahe0jZCd4dYBMCLycGhmIMKXh4X3YKg94MEDApgz7z7McsAYb6vB4JgqBtLNWzuiAmg1hHd8EwbovqxQrAJ6QHz/p7bK3tOLXKjgytMogjlbQMR9SowwlLOtK3aOpUJeX+yvJvlQ6gcfUx10gs4z3aNasmAO+tJRV/Jgo/WtPnGxaMWVLtUUWxcRgARgT/SPHnu56jp4dcePtWHOKnrDmy0+mqV4AqGw8P19xDg2lJrTUlyXXxQsFSfkRiPmI1639GJebLiFtoUhzHaTeSr1HA+cUW0OzwtqPwjj7CeCR3qPfGKdrPitJJl84qyLRl1f9xdPRSSPePD1oSziLqnLw/ly+cSp0Gnr2M4xTqZU1+l6HrOgMsGT8VMvrcIwUgBsA+mMO+P5TOO/h47JrSMnpy1LNr7u0GFs180grSfolQ+cbwMdlGDozVHzjopLO2d2hWPLqIDzM+GlEYXqg0NPNJj6NAr3YwcGahxj18X+XP8mazA2sG8HBvHrBirBnZUN49YBt7CMFp3j1hcXMG9kp3j1jR5wNrwdkDPzhMFYtUCRvDrAO88PZCc+FYB3hvNYITmOsAoBUKs7KemUEIAXNpvZGRGUEACru7sFPHrBeC9pIuhGY6weMLp2bvvC3tYbx2buQ6wCVvDWgUSOXrC1+15fuQVvd7kU8vWErXvuP3IArdGuzSeSA7PeHEKyT0grQ6+mJ5YNzvN69mmAx5VluK7UZy1Am9KTKVuNK6KFxJr9CR5RpFlrCJcgfe/IRXm5ZUu+sLrVt1Scfp+hiWlHLopwzjnzO9911ssJ0kiWLgUKGlOkcXGW1ZGkcNbBrY0uUv2ymNn0bTbKm8TkYiZgZxOPrCmV16RBzJjDkkenjtUqTsp93tKbtKlyTlnmXHnD1CaCntWNvTtVaTgpOausZ81JqmLraajXPJSaef6DGNC3+7yAxvdY9XjZWz5eLzZJlNEFXO7GyU5q6wU1uyk3CnAnrBv92dm7hXrARrdnducesel4gO9xTsUz84PF2wLoTw6weLjuXfeDxTf3bvDrAA74X0G4OkELTXbZ2KYUggAjWUDmyE5GucFSshSxdKd0dYTfHe7AG7ASVGqxdUN0dYBTidYcFjJPWEGes+0+5ASTtqwdGSesHG+fF+7AGIOtA7w8kKNk307SjmnpCYjvAO9OaYBs1UjFwjFPSAhdIJEhhydYWQRRbzdKg04+RA9hESy6AYtzjaVtrSBf1gKVp6VzijOpVKTDsss1Uyq7XqOB+lI8XkY9bMo6PiZ9sbhfSTDleMBcpxiOTMecKqYjDu9XQ6ffwpEc4q+aDrApwrNBWPcvKqmHW2EGi3jdB+6OJ+QrFfnK6i3xhN1PaOWeSy1NzBNCCppNKBAOFfMkfiesT1KjVnBAyV1jyhCUNpZSAlhIABHCPWBFxWDQ3VdY6eGMxx04vJnc8t0Uvi4rZQnJVc4CNYLrmyE7p6wbwuubKBunrARfwd2Up3T1i6gI1uLmxdy84D3lFL2VJyHWCt+he2CN0dYMVmruysbo6wAQHDec2FZUggwXtPG6v7sEAu9TXYDl84MTi7grk84TMd9gnlpCmte93uSkAY5r8XlEGJqr7bpCY83jcsGNf43tAGI2gO+PCA51QauHMQYjLxoKmpueLzVgF3aloVc5h0igaTP/C6TO0FW1pTe8sI66X6fsWWpySsS4/aFSlx04ttHiPM1+X4RGz8tNPBmdmVKdDrSKu+dOPrGHk428e49XhZScur7PktBxIU2byTkQY9plFqySTDCU1zI7k4HNKsRD4Tk0Bglsf5j+kc+We3Wsvp2MuiXbLkwpKQOFY7aJzPxdszCyKNpYomoyFR9Ii5jXPmrzl7jdGAH6xyX8bZlmTtpyTimSloXFcFUIOXEf1jbgnbkmnn8mzHivatIwpTDUdf784XiQoUa4GKjofpxKW7q5OdCZWdp4XK4c6oOfyPvFtoObwuWOi44wODuDY3DC0CsHsE12TCZjvK6rlgOPjbvJSAM/HwI3YXexdwXygcYTpr8+WkGZ77f5YAFFDv8FcPSCDD7ff4U6QQCnZ8bFJ3YKEYO4q5fKEwbxd2gd0dIKFGDmKlbh6QC41orxeUxF2/bkpYMlr5wqU+o3W20Cqlny/WJM7Ows95mFHhGOWzbn+N2zMz5XWWZUWZauV1JxV8/z8omRFTszp7bTo/YLIYZP/kmFlR+gpEFa1vaUzsrMFy0xLo1aiUyybl7DKuf0MNPiSTma+seHX7zS0k5pIi2jZgiU72qhXEYnGNg0WSiasOUBAWkN6tQOO7h+UZy2hAQFE4qAi4dnVpobbnZF80LStcj0IxH1HvEo/Z1b9nSdlNGZMyiXaOF1WIr5DP6fSIBVqSaWkuF9pIUaCta/wCmlfaGGk9sJtS3Ul1YU0wvYbzHGIafl3ZxSQhIBVicOEbT+J4+STK3VUn8vyYW4yb1+WnWFZUvPMpmy8iYbOICTh9P1hvp7RqwnGjQa5aUADyN78oq/Z1bbknNiWuPql1JxWUm6D6+cS3aBaCZi1ZeTZUFIYbLiyMqqIA9gYzz4JwZdYnDyMvIx7ZM+fZckkrmmFONOtJKkrbUUqTToRlFnlNINLZJtKRaMvOJA3ZhFflUUPvDCe1bkm6BmUkH5xw+Jrxiiy0y/aNPMEJteyG1pGZYcIHyBr+MXuyrRlLUkm5xhzWMObtc0niCOBEYrOulyWWkEhQFUnziX7NNIxJ22LPmTWXnaICTkl3gfnl9IrYnbXq08fEndgOz42KzumDBGD20VbvGkG4aOYrO6ekQktQDR7Ff5QkFQjZdF5WYOcEAYNYr2grLygIKCErN4r3T0g8E3jtXvaCmronevcekBWu0e2DYOh9oOpV+0upDDChneWbop6Cp+UYypXw9ntsCmAAP5xdO3Cc/arDsi9eSFrnHP8oup/FUZ4+9fuiLz6Vpy3OLQKE3hHdM5eGwQVdCYiS6Eipygm9Y0lwIO2E3kkelYlCbYnZ6937bbaB0dvV9om2ZwyNtSzyFd3MI1Ssc6j/aKy1MpeZbdScFJBEd5l8u2am4e8ZNUnpTL8onH4qL9NU0mlGZfRx7UoAAuUVx3hxjO7Tm56zphDDToAWipN0VKSKxeJy0U2noFLzKftG2ifIgisUm3ka20GFVwSyAfpHU8Tdxu3O8vUy3GlyiGHNGpd54bCJYKqMCCBw+kZ18cubE/aLygVOrupplQYCJ60ba+G7MW1INHFpEuOtQqh/CKTrdVIS8qDkKq9f7rHP5dy2ft7uOy4yva355TqgpbaWOASCVH1rhHkzQTmaCGs3MluWWoHaIup9TgIZFygxOHnGLRLTkwVy7KkGgIorziFdmXZVYeYXddaWFoV0INQYcF6ssBXI4RHzeK1DgRSJg+nbBtJu1LEkbRRtInGEupH3SQKj6w+8LZWbxVkekZ32G2pr9EHJFw31yU0tpNeCVbQ9yR8o0Twtg43uPSKWaXFdUbqxeVwMELXU7J2q41hIgA7qpTtXsx0gpcqlJvBWZ6Qvhnu9oqz8oAAghKDeC949ID597VJ7X9oE8lKryJRlqXT60vH3VFXDtc4eW8tU/pBas3WqXpx0pPVIUQn2AiMc7tV0+saT6Z10fc7o/KHMw5eDa8yU0MRrq6tqEdUvVZHlEhzZzxRrJcnBJvI9DDxL9LwJ2VChiFKylxDid5OHqIdlyowNRE6F30XtO/onaFnrVtMPoU2P3FqH5gxytJV6aJ6AD2isWRMmXnUVUQ24QhY644e9IsE+5cUtZ4R1PCsuDm+XLMjC1bT11nSVmDdYfcdWPWl3/ANoZqfK1FRMMHFlbql51MIp8NIUtXAZRz+bKZZ2vdw49OOR7m3y5MIbB2WxeV68Pzjm653a/QxxZbdIKlXQpZqamEme7Ck1qaRk0O0u9yI4OmpEckuUTSOzCNdWnCA0HsKtAy2kdqWfiUzUsl1KehQrH2X7RtgGr2U7QVmcqR899nTi7O09shwCiXyuXX6KSae92PoTcFG9pCsz0imS8KCWhcQL4ONYIAS3sti8nO9BFUkGzXU7RO95QEAApaUbqt4jlhRUHuRU80IKDwzVPPAYbpDoVaNgrWotmakQdiabGFP3hwPtFSn5Gr14A0KRjH0/hknFrmMQVpaIWJaCy4uTDVc3WVFB+YyP0i0yV0+bZtgMtZ0JyhZWV1suhdMxG4zHZdZjq73xjuqpgXGkqP5fhETb3Z1NSneWUPipYDBOCVp+WAMW7I0yr4HyMGpKDQiLRM2e5KOauaZcYX0dQUn3hpNySVN30YlOY6iJlNINSDdqMxEnOzinrPbVzKFD6w3LdzOCVYUtBvbl8qR6Rvxct45de2HJxTPTgGqJFRHBUuXnAmmwnExKONnIZmHrEkhloBShezVjGO2yDEu4OJhtPMFDCnFnIjP1EXORsaZtBQTISr8x5toJH1yi2WP2bzD4P+KrRLpIxZRRaz68B7xXadMhlpbXMhVMRnEpZsoGkrKxSvWNdluy+zmTRM48rqlDSUfrFjszRax7MUlcnKJcfTm48Ssj0rgPlEXJOmb6GaIWjaFqSVpLaVKycq6l1LihtOEEEADp5xsIN3BvFJ3j0gy8HEc3GFrTwdzm8oratIQEo2WdpPH1ghRUYM4o4nzgiAOd2lKkYFWcCwEKSlOAVn5wQQAoXXEtjcVmICKO6obnSCCAQbTxaO4OEKkXnFNqxSnIQQQS8hCJhTjL6EuNpySoViNOj9jTesMxZcoojiGgPwggghG/8B6MTKSXLKSD+484n8FQkvoFoyGVf8tJu4AGZd/8AqFgidljvL6HaOtslxNksFScr5Uv8SYkZSyLNl2Q4xISra05FLKRT2hYIhB4CdSlznyr/AEgODYcG+czBBBIXsIStGClZnrCOktJSpGBVnBBAenBq7oRhezhHO6WlCMEqzEEEAOEtquowFKwQQQH/2Q=="
+      type="image/x-icon"
+    />
+  </head>
+  <body>
+    <main class="dashboard-container">
+      <header class="dashboard-header">
+        <h1>Users Management</h1>
+        <button class="btn-primary">Add a new User +</button>
+      </header>
+      <div class="table-wrapper">
+        <table class="users-table">
+          <thead>
+            <tr>
+              <th class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </th>
+              <th>   User</th>
+              <th>   Role</th>
+              <th>   Status</th>
+              <th>   Email</th>
+              <th>   Phone</th>
+              <th>   Actions</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=1" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Israel Israeli</span>
+                    <span class="User-Mail">israel@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>Devops Engineer</td>
+              <td><span class="badge active">Active</span></td>
+              <td>israel@example.com</td>
+              <td>+1 234 567 890</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=2" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Sarah Levi</span>
+                    <span class="User-Mail">sarah@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>Frontend Developer</td>
+              <td><span class="badge active">Active</span></td>
+              <td>sarah@example.com</td>
+              <td>+1 234 567 891</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=3" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Noam Cohen</span>
+                    <span class="User-Mail">noam@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>Product Manager</td>
+              <td><span class="badge inactive">Inactive</span></td>
+              <td>noam@example.com</td>
+              <td>+1 234 567 892</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=4" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Dana Ron</span>
+                    <span class="User-Mail">dana@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>UI/UX Designer</td>
+              <td><span class="badge active">Active</span></td>
+              <td>dana@example.com</td>
+              <td>+1 234 567 893</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=5" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Ari Dayan</span>
+                    <span class="User-Mail">ari@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>Backend Developer</td>
+              <td><span class="badge active">Active</span></td>
+              <td>ari@example.com</td>
+              <td>+1 234 567 894</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=6" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Maya Tal</span>
+                    <span class="User-Mail">maya@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>QA Engineer</td>
+              <td><span class="badge active">Active</span></td>
+              <td>maya@example.com</td>
+              <td>+1 234 567 895</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=7" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Eitan Gal</span>
+                    <span class="User-Mail">eitan@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>Fullstack Developer</td>
+              <td><span class="badge inactive">Inactive</span></td>
+              <td>eitan@example.com</td>
+              <td>+1 234 567 896</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=8" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Hila Barak</span>
+                    <span class="User-Mail">hila@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>Marketing Manager</td>
+              <td><span class="badge active">Active</span></td>
+              <td>hila@example.com</td>
+              <td>+1 234 567 897</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=9" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Yossi Chen</span>
+                    <span class="User-Mail">yossi@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>Data Scientist</td>
+              <td><span class="badge active">Active</span></td>
+              <td>yossi@example.com</td>
+              <td>+1 234 567 898</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td class="checkbox-col">
+                <input type="checkbox" class="custom-checkbox" />
+              </td>
+              <td>
+                <div class="user-cell">
+                  <img src="https://i.pravatar.cc/150?u=10" alt="avatar" />
+                  <div class="user-info">
+                    <span class="User-Name">Ronit Shani</span>
+                    <span class="User-Mail">ronit@example.com</span>
+                  </div>
+                </div>
+              </td>
+              <td>HR Manager</td>
+              <td><span class="badge active">Active</span></td>
+              <td>ronit@example.com</td>
+              <td>+1 234 567 899</td>
+              <td>
+                <div>
+                  <button class="icon-btn">
+                    <span class="edit-span">Edit</span>
+                  </button>
+                  <button class="icon-btn">
+                    <span class="delete-span">Delete</span>
+                  </button>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </main>
+  </body>
+</html>
