@@ -1,16 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>rock-paper-scissors</title>
-</head>
-<body>
-    <button onclick="console.log('clicked');">Rock</button>
-    <button onclick="console.log('clicked');">Paper</button>
-    <button onclick="console.log('clicked');">Scissors</button>
-    <p id="result"></p>
-    
+  </head>
+  <body>
+   <button onclick="randomNumber = Math.random(); 
+     let computerMove = '' ;
+     if (randomNumber >= 0 && randomNumber < 1/3) {
+        computerMove = 'rock';
+      } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        computerMove = 'paper';
+      } else {
+        computerMove = 'scissors';
+      }
+      let result = '';
+      if (computerMove === 'rock') {
+        result = 'you lose';
+      } else if (computerMove === 'paper') {
+        result = 'you win';
+      } else {
+        result = 'tie';
+      }
+      document.getElementById('result').textContent = result;
 
-</body>
+      console.log(`You picked Rock & Computer picked ${computerMove} -- ${result}`);">
+    
+   Rock</button>
+   <button onclick="randomNumber = Math.random(); ">Paper</button>
+   <button onclick="randomNumber = Math.random(); console.log(randomNumber);">Scissors</button>
+<p id="result"></p>
+  </body>
 </html>
