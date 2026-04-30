@@ -122,7 +122,26 @@
 //           res = comp === 'rock' ? 'you lose' : comp === 'paper' ? 'you win' : 'tie';
 //         }
 
+// function number() {
+//   console.log(5);
+// }
+// number();
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.number = void 0;  
+const user ={
+  name: "dani",
+  age: 25
+  city: "ISRAEL"
+}
+console.log(user.name + " is " + user.age + " years old and lives in " + user.city + ".");  
 function number() {
   console.log(5);
+
 }
-number();
+const score ={
+  wins: 0,
+  losses: 0,
+  ties: 0
+};
+if (score.wins > 0) {
+  console.log("You win!");
