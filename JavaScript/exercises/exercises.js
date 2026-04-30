@@ -121,3 +121,8 @@
 //         } else {
 //           res = comp === 'rock' ? 'you lose' : comp === 'paper' ? 'you win' : 'tie';
 //         }
+
+function number() {
+  console.log(5);
+}
+number();
